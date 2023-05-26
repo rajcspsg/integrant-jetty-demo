@@ -1,11 +1,14 @@
 {:paths ["src" "resources"]
+ :mvn/repos {"maven-remote-repo" {:url "https://clojars.org/repo/"}}
  :deps
  {ring/ring-core {:mvn/version "1.9.5"},
   ring/ring-jetty-adapter {:mvn/version "1.9.5"}
   metosin/reitit-ring {:mvn/version "0.5.18"}
+  metosin/reitit-http {:mvn/version "0.5.18"}
+  metosin/reitit-sieppari {:mvn/version "0.5.18"}
   metosin/reitit-middleware {:mvn/version "0.5.18"}
   integrant/integrant {:mvn/version "0.8.0"}
-
+  info.sunng/ring-jetty9-adapter                {:mvn/version "0.14.3"}
   seancorfield/next.jdbc {:mvn/version "1.2.659"}
   org.xerial/sqlite-jdbc {:mvn/version "3.36.0.3"}
 

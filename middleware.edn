@@ -1,0 +1,15 @@
+{:db
+ #object[next.jdbc.connection$url_PLUS_etc$reify__2091 0x22f4e88c "jdbc:sqlite:usermanager_db"],
+ :middleware
+ [#object[usermanager.handler$my_middleware 0x548ce8e1 "usermanager.handler$my_middleware@548ce8e1"]
+  {:name :reitit.ring.middleware.parameters/parameters,
+   :compile
+   #object[reitit.ring.middleware.parameters$fn__5185 0x7b68e861 "reitit.ring.middleware.parameters$fn__5185@7b68e861"],
+   :wrap
+   #object[ring.middleware.params$wrap_params 0x5ecc6da2 "ring.middleware.params$wrap_params@5ecc6da2"]}
+  #object[ring.middleware.keyword_params$wrap_keyword_params 0x60c3bd93 "ring.middleware.keyword_params$wrap_keyword_params@60c3bd93"]
+  {:name :usermanager.handler/db,
+   :compile
+   #object[usermanager.handler$fn__6512 0x1970b358 "usermanager.handler$fn__6512@1970b358"]}],
+ :handler
+ #object[usermanager.controllers.user$get_users 0x643de61e "usermanager.controllers.user$get_users@643de61e"]}

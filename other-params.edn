@@ -1,0 +1,31 @@
+{:reitit.middleware/compiled 1,
+ :lookup
+ #object[reitit.core$default_router_options$lookup__4553 0x9b3615a "reitit.core$default_router_options$lookup__4553@9b3615a"],
+ :conflicts
+ #object[reitit.core$default_router_options$throw_BANG___4568 0x4ff7c14f "reitit.core$default_router_options$throw_BANG___4568@4ff7c14f"],
+ :coerce
+ #object[reitit.ring$coerce_handler 0x1282ea21 "reitit.ring$coerce_handler@1282ea21"],
+ :exception
+ #object[reitit.exception$exception 0x5e325d3e "reitit.exception$exception@5e325d3e"],
+ :expand
+ #object[reitit.core$eval4219$fn__4220$G__4210__4227 0x76df5e5c "reitit.core$eval4219$fn__4220$G__4210__4227@76df5e5c"],
+ :compile
+ #object[reitit.ring$compile_result 0x26734135 "reitit.ring$compile_result@26734135"],
+ :reitit.ring/default-options-endpoint
+ {:no-doc true,
+  :handler
+  #object[reitit.ring$fn__4881$fn__4890 0x60e3f2f0 "reitit.ring$fn__4881$fn__4890@60e3f2f0"]},
+ :data
+ {:db
+  #object[next.jdbc.connection$url_PLUS_etc$reify__2091 0x22f4e88c "jdbc:sqlite:usermanager_db"],
+  :middleware
+  [#object[usermanager.handler$my_middleware 0x548ce8e1 "usermanager.handler$my_middleware@548ce8e1"]
+   {:name :reitit.ring.middleware.parameters/parameters,
+    :compile
+    #object[reitit.ring.middleware.parameters$fn__5185 0x7b68e861 "reitit.ring.middleware.parameters$fn__5185@7b68e861"],
+    :wrap
+    #object[ring.middleware.params$wrap_params 0x5ecc6da2 "ring.middleware.params$wrap_params@5ecc6da2"]}
+   #object[ring.middleware.keyword_params$wrap_keyword_params 0x60c3bd93 "ring.middleware.keyword_params$wrap_keyword_params@60c3bd93"]
+   {:name :usermanager.handler/db,
+    :compile
+    #object[usermanager.handler$fn__6512 0x1970b358 "usermanager.handler$fn__6512@1970b358"]}]}}

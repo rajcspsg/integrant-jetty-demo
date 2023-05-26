@@ -37,6 +37,7 @@
   "Render the list view with all the users in the addressbook."
   [req]
   (let [users (model/get-users (:db req))]
+    (println "in get users")
     (-> req
         (assoc-in [:params :users] users)
         (assoc :application/view "list"))))

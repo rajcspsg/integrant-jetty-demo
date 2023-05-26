@@ -13,15 +13,20 @@
   [handler]
   (fn [req]
     (let [resp (handler req)]
+      (println "in my-middleware")
       (if (resp/response? resp)
         resp
         (user-ctl/render-page resp)))))
 
 (def middleware-db
   {:name ::db
-   :compile (fn [{:keys [db]} _]
+   :compile (fn [{:keys [db] :as mw} other-param]
               (fn [handler]
                 (fn [req]
+                  (println "in middleware-db")
+                  (clojure.pprint/pprint mw)
+                  (println "other param \n")
+                  (clojure.pprint/pprint other-param)
                   (handler (assoc req :db db)))))})
 
 (defn app [db]
